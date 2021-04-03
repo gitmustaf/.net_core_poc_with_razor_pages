@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "wdALpQEGfSgmSUkxfhx3jSLlkqeVWYtk5d8HjERwgRcbYD5w2TIyLyBn7IWDWdMuOUUa1hZCzk4tHyy4H2D7qw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Administrator\\Desktop\\Work Space\\BookListing_Core_POC\\BookListing_Core_POC.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.13\\microsoft.visualstudio.azure.containers.tools.targets.1.10.13.nupkg.sha512"
+  ],
+  "logs": []
+}
