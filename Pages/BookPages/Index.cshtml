@@ -1,0 +1,57 @@
+﻿@page
+@model BookListing_Core_POC.Pages.BookPages.IndexModel
+@{
+    var i = 0;
+}
+
+<br>
+<div class="container row p-0 m-0">
+    <div class="col-10">
+        <h2 class="text-danger">Book List</h2>
+    </div>
+    <div class="col-2">
+        <a asp-page="Create" class="btn btn-info text-white form-control">Add New Book</a>
+    </div>
+
+    <div class="col-12 p-3 mt-3 border">
+        <from method="post">
+            @if(Model.Books.Count() > 0)
+            {
+                <table class="table table-striped border table-hover">
+                    <tr class="table-secondary">
+                        <th>
+                            <label>Sl.No.</label>
+                        </th>
+                        <th>
+                            <label asp-for="Books.FirstOrDefault().Name"></label>
+                        </th>
+                        <th>
+                            <label asp-for="Books.FirstOrDefault().Author"></label>
+                        </th>
+                        <th>
+                            <label asp-for="Books.FirstOrDefault().ISBN"></label>
+                        </th>
+                        <th>Action</th>
+                    </tr>
+                    @foreach(var item in Model.Books)
+                    {
+                        i++;
+                <tr>
+                    <td>@i</td>
+                    <td>@Html.DisplayFor(m => item.Name)</td>
+                    <td>@Html.DisplayFor(m => item.Author)</td>
+                    <td>@Html.DisplayFor(m => item.ISBN)</td>
+                    <td>
+                        <button class="btn btn-sm btn-danger">Delete</button>
+                        <a class="btn btn-primary btn-sm text-white">Edit</a>
+                    </td>
+                </tr>
+                    }
+                </table>
+            }
+            else { 
+                <p>No Books Found !!!</p>
+            }
+        </from>
+    </div>
+</div> 
