@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31129.286
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookListing_Core_POC", "BookListing_Core_POC.csproj", "{6C6FB771-95BC-4D24-A4D2-A7556FF4EBFC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookListing_Core_POC", "BookListing_Core_POC.csproj", "{6C6FB771-95BC-4D24-A4D2-A7556FF4EBFC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
