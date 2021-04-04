@@ -14,7 +14,7 @@
     </div>
 
     <div class="col-12 p-3 mt-3 border">
-        <from method="post">
+        <form method="post">
             @if(Model.Books.Count() > 0)
             {
                 <table class="table table-striped border table-hover">
@@ -42,16 +42,16 @@
                     <td>@Html.DisplayFor(m => item.Author)</td>
                     <td>@Html.DisplayFor(m => item.ISBN)</td>
                     <td>
-                        <button class="btn btn-sm btn-danger">Delete</button>
-                        <a class="btn btn-primary btn-sm text-white">Edit</a>
+                        <button asp-page-handler="Delete" asp-route-id="@item.Id" onclick="return confirm('Are you sure ?')" class="btn btn-sm btn-danger">Delete</button>
+                        <a asp-page="Edit" asp-route-id="@item.Id" class="btn btn-primary btn-sm text-white">Edit</a>
                     </td>
                 </tr>
                     }
                 </table>
             }
             else { 
-                <p>No Books Found !!!</p>
+                <p>No Books Found !!! Please add your fevourit books. </p>
             }
-        </from>
+        </form>
     </div>
 </div> 

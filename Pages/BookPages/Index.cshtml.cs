@@ -23,5 +23,22 @@ namespace BookListing_Core_POC.Pages.BookPages
         {
             Books = await _db.Book.ToListAsync();
         }
+
+        public async Task<IActionResult> OnPostDelete(int id)
+        {
+            Book book = await _db.Book.FindAsync(id);
+            if(book != null)
+            {
+                _db.Book.Remove(book);
+                await _db.SaveChangesAsync();
+
+            }
+            else
+            {
+                return NotFound();
+            }
+
+            return RedirectToPage();
+        }
     }
 }

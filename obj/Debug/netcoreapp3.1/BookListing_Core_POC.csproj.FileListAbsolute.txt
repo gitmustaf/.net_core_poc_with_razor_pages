@@ -380,3 +380,4 @@ C:\Users\Administrator\Desktop\Work Space\BookListing_Core_POC\bin\Debug\netcore
 C:\Users\Administrator\Desktop\Work Space\BookListing_Core_POC\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\Administrator\Desktop\Work Space\BookListing_Core_POC\obj\Debug\netcoreapp3.1\Razor\Pages\BookPages\Index.cshtml.g.cs
 C:\Users\Administrator\Desktop\Work Space\BookListing_Core_POC\obj\Debug\netcoreapp3.1\Razor\Pages\BookPages\Create.cshtml.g.cs
+C:\Users\Administrator\Desktop\Work Space\BookListing_Core_POC\obj\Debug\netcoreapp3.1\Razor\Pages\BookPages\Edit.cshtml.g.cs
